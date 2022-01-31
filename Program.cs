@@ -53,34 +53,32 @@ namespace DanielPersonalityQuiz
             }
 
             
-        } // I added this curly bracket to end your Main method. Your other methods should be inside the Program class but not inside of this method.
-
-        // TODO(jcollard 2022-01-28): Mark method as public and complete documentation comment
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="question"></param>
-        /// <returns></returns>
-        static int AskQuestion(Question question) // I added the variable question here.
+        } 
+        
+        public static void TestAll()
         {
+            bool TestAskQuestion = testaskquestion.RunTest();
+            Console.WriteLine($"test AskQuestion(filename): {testaskquestion}");
+        }
+        
+        
+        
+        
+        // I added this curly bracket to end your Main method. Your other methods should be inside the Program class but not inside of this method.
+            
             //Display the question to the user
             //Loop through each answer and display it
             //Using the GetValidAnswer method get and return the users response
             /// <summary>
             /// This displays the question and all of the answers and prompts the user to choose one the answers and returns the answer.
             /// </summary>
+            /// <param name="question">The question that is being asked</param>
+            /// <returns>It returns the answer to the player</returns>
+        public int AskQuestion(Question question) // I added the variable question here.
+        {
             return -1;
         }
 
-        // TODO(jcollard 2022-01-28): Mark method as public and complete
-        // documentation comment
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="answers"></param>
-        /// <returns></returns>
-        static int GetValidAnswer(List<string> answers)
-        {
             //Validate that there is at least 1 possible answer.
             //If the list of answers is empty then throw an exception
             //If not display a message that asks the user to pick an option
@@ -92,21 +90,14 @@ namespace DanielPersonalityQuiz
             /// Given a list of answers, prompts the user to enter a number corresponding to one of the answers. 
             /// If the user enters a number that is not within the specified range,
             ///  the user is asked to enter another value.
-
             /// </summary>
+            ///<param name="answers">The answer that is being validated in the method</param>
+            /// <returns>It returns the user's choice or an invalid command message</returns>
+        public int GetValidAnswer(List<string> answers)
+        { 
             return -1;
         }
 
-        // TODO(jcollard 2022-01-28): Mark method as public and complete
-        // documentation comment
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="scores"></param>
-        /// <param name="results"></param>
-        /// <returns></returns>
-        static string GetResult(List<int> scores, List<string> results)
-        {
             //Initialize highest to 0 which shows the highest score we have gotten.
             //Initialize highestIx to 0 which shows the highest score we have gotten.
             //Loop through each score in scores, tracking the index in a variable currentIx
@@ -119,6 +110,11 @@ namespace DanielPersonalityQuiz
             /// result and one representing each possible result, 
             /// determines which score is the highest and returns the corresponding string from the results list.
             /// </summary>
+            /// <param name="scores"> The amount of points for each result</param>
+            /// <param name="results">A list of results the player could get</param>
+            /// <returns>It returns the corresponding string from the results list</returns>
+        public string GetResult(List<int> scores, List<string> results)
+        {
             return null;
         }
         
