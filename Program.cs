@@ -7,6 +7,14 @@ namespace DanielPersonalityQuiz
     {
         static void Main(string[] args)
         {
+            
+            if(args.Length > 0 && args[0] == "test")
+            {
+                TestAll();
+                return;
+            }
+            
+            
             // Feedback(jcollard 2022-01-28): Daniel, you're off to a great
             // start! I've gone ahead and done a few corrections as well as
             // added a handful of TODO comments. You sould complete the TODO
@@ -57,8 +65,14 @@ namespace DanielPersonalityQuiz
         
         public static void TestAll()
         {
-            bool TestAskQuestion = testaskquestion.RunTest();
-            Console.WriteLine($"test AskQuestion(filename): {testaskquestion}");
+            bool TestAskQuestion = TestAskQuestion.RunTest();
+            Console.WriteLine($"test AskQuestion(filename): {TestAskQuestion}");
+
+            bool TestGetResult = TestGetResult.RunTest();
+            Console.WriteLine($"test GetResult(filename): {testGetResult}");
+
+             bool TestGetValidAnswer = TestGetValidAnswer.RunTest();
+            Console.WriteLine($"test GetValidAnswer(filename): {testGetValidAnswer}");
         }
         
         
