@@ -1,0 +1,15 @@
+/Users/danielrosenzweig/Documents/GitHub/DanielPersonalityQuiz/obj/Debug/net5.0/DanielPersonalityQuiz.csproj.AssemblyReference.cache
+/Users/danielrosenzweig/Documents/GitHub/DanielPersonalityQuiz/obj/Debug/net5.0/DanielPersonalityQuiz.GeneratedMSBuildEditorConfig.editorconfig
+/Users/danielrosenzweig/Documents/GitHub/DanielPersonalityQuiz/obj/Debug/net5.0/DanielPersonalityQuiz.AssemblyInfoInputs.cache
+/Users/danielrosenzweig/Documents/GitHub/DanielPersonalityQuiz/obj/Debug/net5.0/DanielPersonalityQuiz.AssemblyInfo.cs
+/Users/danielrosenzweig/Documents/GitHub/DanielPersonalityQuiz/obj/Debug/net5.0/DanielPersonalityQuiz.csproj.CoreCompileInputs.cache
+/Users/danielrosenzweig/Documents/GitHub/DanielPersonalityQuiz/bin/Debug/net5.0/DanielPersonalityQuiz.deps.json
+/Users/danielrosenzweig/Documents/GitHub/DanielPersonalityQuiz/bin/Debug/net5.0/DanielPersonalityQuiz.runtimeconfig.json
+/Users/danielrosenzweig/Documents/GitHub/DanielPersonalityQuiz/bin/Debug/net5.0/DanielPersonalityQuiz.runtimeconfig.dev.json
+/Users/danielrosenzweig/Documents/GitHub/DanielPersonalityQuiz/bin/Debug/net5.0/DanielPersonalityQuiz.dll
+/Users/danielrosenzweig/Documents/GitHub/DanielPersonalityQuiz/bin/Debug/net5.0/ref/DanielPersonalityQuiz.dll
+/Users/danielrosenzweig/Documents/GitHub/DanielPersonalityQuiz/bin/Debug/net5.0/DanielPersonalityQuiz.pdb
+/Users/danielrosenzweig/Documents/GitHub/DanielPersonalityQuiz/obj/Debug/net5.0/DanielPersonalityQuiz.dll
+/Users/danielrosenzweig/Documents/GitHub/DanielPersonalityQuiz/obj/Debug/net5.0/ref/DanielPersonalityQuiz.dll
+/Users/danielrosenzweig/Documents/GitHub/DanielPersonalityQuiz/obj/Debug/net5.0/DanielPersonalityQuiz.pdb
+/Users/danielrosenzweig/Documents/GitHub/DanielPersonalityQuiz/obj/Debug/net5.0/DanielPersonalityQuiz.genruntimeconfig.cache

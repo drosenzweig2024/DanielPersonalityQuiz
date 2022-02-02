@@ -7,6 +7,9 @@ namespace DanielPersonalityQuiz
      {
         public static bool RunTest()
         {
+            Console.WriteLine("The method should return the users choice");
+            Console.WriteLine("");
+            
             return false;
         }
     }

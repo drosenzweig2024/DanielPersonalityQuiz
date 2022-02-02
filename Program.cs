@@ -65,13 +65,13 @@ namespace DanielPersonalityQuiz
         
         public static void TestAll()
         {
-            bool TestAskQuestion = TestAskQuestion.RunTest();
-            Console.WriteLine($"test AskQuestion(filename): {TestAskQuestion}");
+            bool testAskQuestion = TestAskQuestion.RunTest();
+            Console.WriteLine($"test AskQuestion(filename): {testAskQuestion}");
 
-            bool TestGetResult = TestGetResult.RunTest();
+            bool testGetResult = TestGetResult.RunTest();
             Console.WriteLine($"test GetResult(filename): {testGetResult}");
 
-             bool TestGetValidAnswer = TestGetValidAnswer.RunTest();
+             bool testGetValidAnswer = TestGetValidAnswer.RunTest();
             Console.WriteLine($"test GetValidAnswer(filename): {testGetValidAnswer}");
         }
         
