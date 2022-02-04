@@ -107,7 +107,7 @@ namespace DanielPersonalityQuiz
             /// </summary>
             ///<param name="answers">The answer that is being validated in the method</param>
             /// <returns>It returns the user's choice or an invalid command message</returns>
-        public int GetValidAnswer(List<string> answers)
+        public static int GetValidAnswer(List<string> answers)
         { 
             return -1;
         }
@@ -148,5 +148,11 @@ namespace DanielPersonalityQuiz
         // Feedback(jcollard 2022-01-28): This constructs a new list so we
         // can add answers to it.
         public List<string> answers = new List<string>();
+
+       public string Highest;
+
+       public string HighestIx;
+
+       public string CurrentIx; 
     }
 }

@@ -14,7 +14,7 @@ namespace DanielPersonalityQuiz
             Console.WriteLine($"Display {answers}");
             Console.WriteLine("Type '5' This should display 'Invalid'");
             Console.WriteLine("Type '[A],[B],[C],or [D]' This should be valid");
-        
+           
             return false;
         }
     }
