@@ -7,14 +7,8 @@ namespace DanielPersonalityQuiz
     {
         public static bool RunTest()
         {
-        string Highest;
-        string HighestIx;
-        string CurrentIx;
-        Console.WriteLine("The method should return the users choice");
-        Console.WriteLine("Initialize scores to 0");
-        Console.WriteLine("Loop through questions and add to scores");
-
-            
+            // TODO(jcollard 2022-02-04): This can be tested very similarly to AskQuestion.
+            // This is because AskQuestion uses this method to get a valid answer.
             return false;
         }
 }

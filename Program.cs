@@ -88,7 +88,7 @@ namespace DanielPersonalityQuiz
             /// </summary>
             /// <param name="question">The question that is being asked</param>
             /// <returns>It returns the answer to the player</returns>
-        public int AskQuestion(Question question) // I added the variable question here.
+        public static int AskQuestion(Question question) // I added the variable question here.
         {
             return -1;
         }
@@ -127,7 +127,7 @@ namespace DanielPersonalityQuiz
             /// <param name="scores"> The amount of points for each result</param>
             /// <param name="results">A list of results the player could get</param>
             /// <returns>It returns the corresponding string from the results list</returns>
-        public string GetResult(List<int> scores, List<string> results)
+        public static string GetResult(List<int> scores, List<string> results)
         {
             return null;
         }
