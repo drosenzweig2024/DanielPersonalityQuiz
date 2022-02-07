@@ -69,6 +69,9 @@ namespace DanielPersonalityQuiz
 
             result = Program.AskQuestion(question);
             
+            // TODO(jcollard 2022-02-07): Double check the expected result. Are
+            // you sure this is what it should be? If so, make sure you give
+            // proper instructions to the tester.
             expected = 2;
 
              if (result != expected)
@@ -100,6 +103,9 @@ namespace DanielPersonalityQuiz
 
             result = Program.AskQuestion(question);
             
+            // TODO(jcollard 2022-02-07): Double check the expected result. Are
+            // you sure this is what it should be? If so, make sure you give
+            // proper instructions to the tester.
             expected = 3; 
 
              if (result != expected)
@@ -110,7 +116,7 @@ namespace DanielPersonalityQuiz
             
                 return false;
             }
-            // TODO(jcollard 2022-02-04): If we make it this far, the test is passing so we return true
+            
             return true;
            
         }

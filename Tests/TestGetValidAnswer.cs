@@ -21,6 +21,11 @@ namespace DanielPersonalityQuiz
             catch
             {
                 // The code appropriately threw an exception
+
+                // TODO(jcollard 2022-02-07): Great job with your try above! It
+                // looks great. However, in this catch block, you do not want to
+                // return. If you made it here, the test is working as expected
+                // and we should continue
                 return false;
             }
             Console.WriteLine($" Select an option 1 to {answers}");
@@ -36,6 +41,13 @@ namespace DanielPersonalityQuiz
 
                 return false;
             }
+
+            // TODO(jcolalrd 2022-02-07): This looks great! Add 1 more test
+            // case, test invalid input and one more correct input and you'll be
+            // golden!
+
+            // TODO(jcollard 2022-02-07): If you make it to the end of this
+            // test case, you should return true.
         }
     }
 }
