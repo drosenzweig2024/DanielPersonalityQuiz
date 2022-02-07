@@ -62,7 +62,7 @@ namespace DanielPersonalityQuiz
             // * What should happen if there is a tie?
             // * What should happen if there are more than 3 possible outcomes?
             // * What other cases might there be?
-
+          
             
 
             // TODO(jcollard 2022-02-03): Finally, if all of the results are as expected, you should return true.

@@ -53,10 +53,66 @@ namespace DanielPersonalityQuiz
             // 1. Test with a list that has more than 3 elements.
             // 2. What are some additional invalid inputs to test?
             // 3. Make sure to test at least 2 more valid inputs
+            question.question = "What is your favorite color?";
+            
+            question.answers.Add("blue");
+            
+            question.answers.Add("yellow");
+            
+            question.answers.Add("green");
+            
+            Console.WriteLine("Type in green. This should come back as invalid");
+            
+            Console.WriteLine("Type in the number 4. This should come back as invalid");
+            
+            Console.WriteLine("Select the number 1. This should be valid");
 
+            result = Program.AskQuestion(question);
+            
+            expected = 2;
 
+             if (result != expected)
+            {
+            
+                Console.Error.WriteLine($"Expected the result to be {expected} but was {result}.");
+
+            
+                return false;
+            }
+
+            question.question = "What is your favorite subject?";
+            
+            question.answers.Add("math");
+            
+            question.answers.Add("history");
+            
+            question.answers.Add("science");
+
+            question.answers.Add("Language");
+            
+            Console.WriteLine("Type in Language. This should come back as invalid");
+            
+            Console.WriteLine("Type in the number 5. This should come back as invalid");
+            
+            Console.WriteLine("Select the number 2. This should be valid");
+
+            Console.WriteLine("Type in the number 1. This should come back as valid");
+
+            result = Program.AskQuestion(question);
+            
+            expected = 3; 
+
+             if (result != expected)
+            {
+            
+                Console.Error.WriteLine($"Expected the result to be {expected} but was {result}.");
+
+            
+                return false;
+            }
             // TODO(jcollard 2022-02-04): If we make it this far, the test is passing so we return true
             return true;
+           
         }
     }
 
