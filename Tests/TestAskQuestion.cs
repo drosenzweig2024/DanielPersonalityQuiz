@@ -49,10 +49,7 @@ namespace DanielPersonalityQuiz
                 return false;
             }
 
-            // TODO: Write at least 2 more test cases
-            // 1. Test with a list that has more than 3 elements.
-            // 2. What are some additional invalid inputs to test?
-            // 3. Make sure to test at least 2 more valid inputs
+
             question.question = "What is your favorite color?";
             
             question.answers.Add("blue");
@@ -69,9 +66,6 @@ namespace DanielPersonalityQuiz
 
             result = Program.AskQuestion(question);
             
-            // TODO(jcollard 2022-02-07): Double check the expected result. Are
-            // you sure this is what it should be? If so, make sure you give
-            // proper instructions to the tester.
             expected = 2;
 
              if (result != expected)
@@ -102,10 +96,7 @@ namespace DanielPersonalityQuiz
             Console.WriteLine("Type in the number 3. This should come back as valid");
 
             result = Program.AskQuestion(question);
-            
-            // TODO(jcollard 2022-02-07): Double check the expected result. Are
-            // you sure this is what it should be? If so, make sure you give
-            // proper instructions to the tester.
+
             expected = 3; 
 
              if (result != expected)

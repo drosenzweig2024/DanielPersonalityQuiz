@@ -58,10 +58,6 @@ namespace DanielPersonalityQuiz
                 return false;
             }
 
-            // TODO(jcollard 2022-02-03): Write at least 3 more test cases.
-            // * What should happen if there is a tie?
-            // * What should happen if there are more than 3 possible outcomes?
-            // * What other cases might there be?
             testScores = new List<int>();
             testScores.Add(4);
             testScores.Add(4);
@@ -121,8 +117,6 @@ namespace DanielPersonalityQuiz
             
             }
 
-
-            // TODO(jcollard 2022-02-03): Finally, if all of the results are as expected, you should return true.
             return true;
         }
     }
