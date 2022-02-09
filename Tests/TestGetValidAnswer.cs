@@ -34,12 +34,12 @@ namespace DanielPersonalityQuiz
                 return false;
             }
 
+            // TODO(jcollard 2022-02-09): Complete the TODOs listed below
+
             // TODO(jcolalrd 2022-02-07): This looks great! Add 1 more test
             // case, test invalid input and one more correct input and you'll be
             // golden!
 
-            // TODO(jcollard 2022-02-07): If you make it to the end of this
-            // test case, you should return true.
             return true;
         }
     }

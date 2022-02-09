@@ -90,6 +90,12 @@ namespace DanielPersonalityQuiz
             /// <returns>It returns the answer to the player</returns>
         public static int AskQuestion(Question question) // I added the variable question here.
         {
+            // Feedback(jcollard 2022-02-09): Do this method second
+
+            // Here is an exmaple showing how to iterate through a list of
+            // options and display them to the console: 
+            // https://jcollard.github.io/IntroToCSharpSite/examples/display-options
+
             return -1;
         }
 
@@ -109,6 +115,18 @@ namespace DanielPersonalityQuiz
             /// <returns>It returns the user's choice or an invalid command message</returns>
         public static int GetValidAnswer(List<string> answers)
         { 
+            
+            // Feedback(jcollard 2022-02-09): Do this method first.
+            
+            // Here is an example of reading input:
+            // https://jcollard.github.io/IntroToCSharpSite/examples/read-input
+            
+            // In your situation, you want to ensure that the users input is
+            // between 1 and answers.Count
+
+            // Note: This method shoudl simply ask the user to enter a value but
+            // doesn't display the actual options. You will do that in AskQuestion.
+            
             return -1;
         }
 
@@ -129,7 +147,7 @@ namespace DanielPersonalityQuiz
             /// <returns>It returns the corresponding string from the results list</returns>
         public static string GetResult(List<int> scores, List<string> results)
         {
-        
+            // Feedback(jcollard 2022-02-09): Do this method last
             return null;
         }
         
