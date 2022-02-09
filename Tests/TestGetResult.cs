@@ -62,11 +62,68 @@ namespace DanielPersonalityQuiz
             // * What should happen if there is a tie?
             // * What should happen if there are more than 3 possible outcomes?
             // * What other cases might there be?
-          
+            testScores = new List<int>();
+            testScores.Add(4);
+            testScores.Add(4);
+            testScores.Add(3);
+
+            testResults = new List<string>();
+            testResults.Add("Iron Man");
+            testResults.Add("Batman");
+            testResults.Add("Superman");
+
+            string result2 = Program.GetResult(testScores, testResults);
+
+            if (result2 != "Iron Man")
+            {
+                Console.Error.WriteLine($"Failure: Expected result to be Iron Man but it was {result2}");
+                return false;
+            }
             
+            testScores = new List<int>();
+            testScores.Add(0);
+            testScores.Add(4);
+            testScores.Add(3);
+            testScores.Add(5);
+            
+            testResults = new List<string>();
+            testResults.Add("Paris");
+            testResults.Add("Miami");
+            testResults.Add("Los Angeles");
+            testResults.Add("New York");
+
+            string result3 = Program.GetResult(testScores, testResults);
+
+            if (result3 != "New York")
+            {
+                Console.Error.WriteLine($"Failure: Expected result to be New York but it was {result3}");
+                return false;
+            }
+            
+            testScores = new List<int>();
+            testScores.Add(4);
+            testScores.Add(3);
+
+            testResults = new List<string>();
+            testResults.Add("Honda");
+            testResults.Add("Toyota");
+            testResults.Add("BMW");
+
+            try
+            {
+                Program.GetResult(testScores, testResults);
+
+                Console.Error.WriteLine(" I expected there to be an error but there was not");
+                return false;
+            }
+            catch
+            {
+            
+            }
+
 
             // TODO(jcollard 2022-02-03): Finally, if all of the results are as expected, you should return true.
-            return false;
+            return true;
         }
     }
 }

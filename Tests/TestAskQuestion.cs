@@ -65,7 +65,7 @@ namespace DanielPersonalityQuiz
             
             Console.WriteLine("Type in the number 4. This should come back as invalid");
             
-            Console.WriteLine("Select the number 1. This should be valid");
+            Console.WriteLine("Select the number 2. This should be valid");
 
             result = Program.AskQuestion(question);
             
@@ -92,14 +92,14 @@ namespace DanielPersonalityQuiz
             question.answers.Add("science");
 
             question.answers.Add("Language");
+
+            Console.WriteLine("You should see the question 'What is your favorite subject?'");
             
             Console.WriteLine("Type in Language. This should come back as invalid");
             
             Console.WriteLine("Type in the number 5. This should come back as invalid");
             
-            Console.WriteLine("Select the number 2. This should be valid");
-
-            Console.WriteLine("Type in the number 1. This should come back as valid");
+            Console.WriteLine("Type in the number 3. This should come back as valid");
 
             result = Program.AskQuestion(question);
             
