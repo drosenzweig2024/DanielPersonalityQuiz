@@ -109,6 +109,8 @@ namespace DanielPersonalityQuiz
             /// <returns>It returns the user's choice or an invalid command message</returns>
         public static int GetValidAnswer(List<string> answers)
         { 
+            
+            
             return -1;
         }
 
@@ -129,6 +131,7 @@ namespace DanielPersonalityQuiz
             /// <returns>It returns the corresponding string from the results list</returns>
         public static string GetResult(List<int> scores, List<string> results)
         {
+        
             return null;
         }
         
