@@ -96,7 +96,8 @@ namespace DanielPersonalityQuiz
             // options and display them to the console: 
             // https://jcollard.github.io/IntroToCSharpSite/examples/display-options
 
-            return -1;
+
+            return -1; 
         }
 
             //Validate that there is at least 1 possible answer.
@@ -126,8 +127,28 @@ namespace DanielPersonalityQuiz
 
             // Note: This method shoudl simply ask the user to enter a value but
             // doesn't display the actual options. You will do that in AskQuestion.
-            
-            return -1;
+            int userChoice;
+
+            do
+            {
+                Console.Write("Enter a number that is between 0 and 5:");
+                string input = Console.ReadLine();
+                bool isANumber = int.TryParse(input, out userChoice);
+                if (isANumber == false)
+                {
+                    Console.Error.WriteLine("You did not enter a number from 0 to 5");
+                }
+                else if (userChoice < 0)
+                {
+                    Console.WriteLine("That number is not greater than 0");
+                }
+                else if (userChoice > answers.Count)
+                {
+                    Console.WriteLine("That number is not less than 5");
+                }
+
+            } while (userChoice < 0 || userChoice > answers.Count);
+            return userChoice;
         }
 
             //Initialize highest to 0 which shows the highest score we have gotten.
