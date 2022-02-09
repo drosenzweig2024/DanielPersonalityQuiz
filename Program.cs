@@ -152,10 +152,5 @@ namespace DanielPersonalityQuiz
         // can add answers to it.
         public List<string> answers = new List<string>();
 
-       public string Highest;
-
-       public string HighestIx;
-
-       public string CurrentIx; 
     }
 }
