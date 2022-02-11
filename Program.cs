@@ -96,7 +96,25 @@ namespace DanielPersonalityQuiz
             // options and display them to the console: 
             // https://jcollard.github.io/IntroToCSharpSite/examples/display-options
 
-
+            static void DisplayOptions(List<string> options)
+            {
+                if(options == null) throw new ArguementNullException("List of options may not be null");
+                if(options.Count == 0) throw new ArgumentException("There should be at least 1 option in the list");
+                int index = 1;
+                foreach (string option in options)
+                {
+                    Console.WriteLine($"{index}. {option}");
+                    index = index + 1;
+                }
+            }
+            static void Main()
+            {
+                List<string> options = new List<string>();
+                options.Add("First Choice");
+                options.Add("Second Choice");
+                options.Add("Third Choice");
+                DisplayOptions(options);
+            }
             return -1; 
         }
 
@@ -169,6 +187,8 @@ namespace DanielPersonalityQuiz
         public static string GetResult(List<int> scores, List<string> results)
         {
             // Feedback(jcollard 2022-02-09): Do this method last
+           
+           
             return null;
         }
         
