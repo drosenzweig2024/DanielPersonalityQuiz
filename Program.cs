@@ -60,6 +60,17 @@ namespace DanielPersonalityQuiz
                 Console.WriteLine(answer);
             }
 
+
+            // TODO(jcollard 2022-02-11): After you have finished all of your
+            // methods you need to create a sequence which calls them here.
+            // 1. Create all of your questions
+            // 2. Create a List<int> scores and set each score to 0.
+            // 3. foreach question, call AskQuestion
+            // 3  a. Store the result of AskQuestion in a variable called result
+            // 3  b. Update scores[result] = scores[result] + 1;
+            // 4. Create a List of your results
+            // 5. Call GetResults(score, results)
+            // 6. Display the results
             
         } 
         
@@ -95,9 +106,18 @@ namespace DanielPersonalityQuiz
             // Here is an exmaple showing how to iterate through a list of
             // options and display them to the console: 
             // https://jcollard.github.io/IntroToCSharpSite/examples/display-options
+            
+            // TODO(jcollard 2022-02-11): You cannot define a method inside of a
+            // method
+            // DELETE BELOW THIS LINE
 
-            static void DisplayOptions(List<string> options)
+            static void DisplayOptions(List<string> options) 
             {
+
+            // DELETE ABOVE THIS LINE
+
+                // TODO(jcollard 2022-02-11): You should modify this code to use
+                // your question and quesiton.answers. This will not work as is
                 if(options == null) throw new ArguementNullException("List of options may not be null");
                 if(options.Count == 0) throw new ArgumentException("There should be at least 1 option in the list");
                 int index = 1;
@@ -106,7 +126,14 @@ namespace DanielPersonalityQuiz
                     Console.WriteLine($"{index}. {option}");
                     index = index + 1;
                 }
+
+                // TODO(jcollard 2022-02-11): After you display the options, you
+                // need to get a valid answer. This can be done by calling
+                // GetValidAnswer and pass in question.answers.
+                // You should then return the result of calling that method
+
             }
+            // DELETE BELOW THIS LINE
             static void Main()
             {
                 List<string> options = new List<string>();
@@ -115,6 +142,8 @@ namespace DanielPersonalityQuiz
                 options.Add("Third Choice");
                 DisplayOptions(options);
             }
+            // DELETE ABOVE THIS LINE
+
             return -1; 
         }
 
@@ -186,8 +215,19 @@ namespace DanielPersonalityQuiz
             /// <returns>It returns the corresponding string from the results list</returns>
         public static string GetResult(List<int> scores, List<string> results)
         {
-            // Feedback(jcollard 2022-02-09): Do this method last
-           
+            // TODO(jcollard 2022-02-11):
+            // Complete this method last. I've created an example
+            // showing how you can use two lists that are associated to
+            // find the shortest person in a list.
+            //
+            // Tips:
+            // * In the example, they use a list of doubles. Your scores are int values.
+            // * You are looking for the highest score rather than the lowest height. 
+            // * The names of your lists are scores (rather than heights) and results (rather than names).
+            //
+            // Start by copying everything inside of the method here first.
+            // Then modify it to meet your needs:
+            // https://jcollard.github.io/IntroToCSharpSite/examples/association-list
            
             return null;
         }
