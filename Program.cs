@@ -59,7 +59,10 @@ namespace DanielPersonalityQuiz
             {
                 Console.WriteLine(answer);
             }
-
+        
+            
+           
+           
 
             // TODO(jcollard 2022-02-11): After you have finished all of your
             // methods you need to create a sequence which calls them here.
