@@ -59,21 +59,60 @@ namespace DanielPersonalityQuiz
             {
                 Console.WriteLine(answer);
             }
-        
-            
-           
-           
 
-            // TODO(jcollard 2022-02-11): After you have finished all of your
-            // methods you need to create a sequence which calls them here.
-            // 1. Create all of your questions
-            // 2. Create a List<int> scores and set each score to 0.
-            // 3. foreach question, call AskQuestion
-            // 3  a. Store the result of AskQuestion in a variable called result
-            // 3  b. Update scores[result] = scores[result] + 1;
-            // 4. Create a List of your results
-            // 5. Call GetResults(score, results)
-            // 6. Display the results
+
+
+            Question question = new Question();
+            question.question = "What is your favorite food?";
+            question.answers.Add("Chicken"); // Index 0
+            question.answers.Add("Fish");    // Index 1
+            questions.answers.Add("Steak"); // Index 2
+
+            Question question = new Question();
+            question.question = "What is your favorite sport besides football?";
+            question.answers.Add("Golf"); // Index 0
+            question.answers.Add("Soccer");    // Index 1
+            questions.answers.Add("Basketball"); // Index 2
+
+            Question question = new Question();
+            question.question = "What is your favorite color";
+            question.answers.Add("blue"); // Index 0
+            question.answers.Add("red");    // Index 1
+            questions.answers.Add("green"); // Index 2
+
+            Question question = new Question();
+            question.question = "What is your favorite football clete brand?";
+            question.answers.Add("Jordans"); // Index 0
+            question.answers.Add("Nike");    // Index 1
+            questions.answers.Add("Adidas"); // Index 2
+
+            Question question = new Question();
+            question.question = "What is your favorite video game";
+            question.answers.Add("GTA"); // Index 0
+            question.answers.Add("Call of Duty");    // Index 1
+            questions.answers.Add("Minecraft"); // Index 2
+
+
+            testScores = new List<int>();
+            testScores.Add(0);
+            testScores.Add(0);
+            testScores.Add(0);
+
+            foreach (question);
+            {
+                AskQuestion();
+                result = Program.AskQuestion(question);
+                result = scores[result] + 1;
+            }
+
+            testResults = new List<string>();
+            testResults.Add("Tom Brady");
+            testResults.Add("Matthew Staford");
+            testResults.Add("Cooper Kupp");
+
+            string result = Program.GetResult(testScores, testResults);
+
+            return result;
 
         }
 
@@ -232,4 +271,3 @@ namespace DanielPersonalityQuiz
     }
 }
 
-   
