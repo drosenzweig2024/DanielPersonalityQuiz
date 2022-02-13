@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace DanielPersonalityQuiz
 {
-    class Program
+    public class Program
     {
         public static void Main(string[] args)
         {
@@ -20,99 +20,108 @@ namespace DanielPersonalityQuiz
             // added a handful of TODO comments. You sould complete the TODO
             // comments before moving on to Part 2.2.
 
-            // Example(jcollard 2022-01-28): Below is an example of using the
-            // Question class to create three questions. 
+            // // Example(jcollard 2022-01-28): Below is an example of using the
+            // // Question class to create three questions. 
 
-            // Construct a new Question object
-            Question woodChuckQuestion = new Question();
+            // // Construct a new Question object
+            // Question woodChuckQuestion = new Question();
 
-            // Next, set the question to be an actual question.
-            woodChuckQuestion.question = "How much wood could a woodchuck chuck if a woodchuck could chuck wood?";
+            // // Next, set the question to be an actual question.
+            // woodChuckQuestion.question = "How much wood could a woodchuck chuck if a woodchuck could chuck wood?";
 
-            // Next, add answers to the question
-            woodChuckQuestion.answers.Add("As much wood as a woodchuck could chuck if a woodchuck could chuck wood.");
-            woodChuckQuestion.answers.Add("Uh... 14?");
-            woodChuckQuestion.answers.Add("None. Clearly the woodchuck is a manifestation of all your fears.");
+            // // Next, add answers to the question
+            // woodChuckQuestion.answers.Add("As much wood as a woodchuck could chuck if a woodchuck could chuck wood.");
+            // woodChuckQuestion.answers.Add("Uh... 14?");
+            // woodChuckQuestion.answers.Add("None. Clearly the woodchuck is a manifestation of all your fears.");
+
+            // Question foodQuestion = new Question();
+
+            // // Next, set the question to be an actual question.
+            // foodQuestion.question = "What is your favorite food?";
+
+            // // Next, add answers to the question
+            // foodQuestion.answers.Add("Wood");
+            // foodQuestion.answers.Add("Woodchuck");
+            // foodQuestion.answers.Add("Banana water");
+
+            // // Displays the wood chuck question
+            // Console.WriteLine(woodChuckQuestion.question);
+
+            // foreach (string answer in woodChuckQuestion.answers)
+            // {
+            //     Console.WriteLine(answer);
+            // }
+
+            // // Displays the food question
+            // Console.WriteLine(foodQuestion.question);
+
+            // foreach (string answer in foodQuestion.answers)
+            // {
+            //     Console.WriteLine(answer);
+            // }
+
+            List<Question> questions = new List<Question>();
 
             Question foodQuestion = new Question();
-
-            // Next, set the question to be an actual question.
             foodQuestion.question = "What is your favorite food?";
+            foodQuestion.answers.Add("Chicken"); // Index 0
+            foodQuestion.answers.Add("Fish");    // Index 1
+            foodQuestion.answers.Add("Steak"); // Index 2
+            questions.Add(foodQuestion);
 
-            // Next, add answers to the question
-            foodQuestion.answers.Add("Wood");
-            foodQuestion.answers.Add("Woodchuck");
-            foodQuestion.answers.Add("Banana water");
+            Question sportQuestion = new Question();
+            sportQuestion.question = "What is your favorite sport besides football?";
+            sportQuestion.answers.Add("Golf"); // Index 0
+            sportQuestion.answers.Add("Soccer");    // Index 1
+            sportQuestion.answers.Add("Basketball"); // Index 2
+            questions.Add(sportQuestion);
 
-            // Displays the wood chuck question
-            Console.WriteLine(woodChuckQuestion.question);
+            Question colorQuestion = new Question();
+            colorQuestion.question = "What is your favorite color";
+            colorQuestion.answers.Add("blue"); // Index 0
+            colorQuestion.answers.Add("red");    // Index 1
+            colorQuestion.answers.Add("green"); // Index 2
+            questions.Add(colorQuestion);
 
-            foreach (string answer in woodChuckQuestion.answers)
-            {
-                Console.WriteLine(answer);
-            }
+            Question shoeQuestion = new Question();
+            shoeQuestion.question = "What is your favorite football clete brand?";
+            shoeQuestion.answers.Add("Jordans"); // Index 0
+            shoeQuestion.answers.Add("Nike");    // Index 1
+            shoeQuestion.answers.Add("Adidas"); // Index 2
+            questions.Add(shoeQuestion);
 
-            // Displays the food question
-            Console.WriteLine(foodQuestion.question);
+            Question videogameQuestion;
+            videogameQuestion = new Question();
+            videogameQuestion.question = "What is your favorite video game";
+            videogameQuestion.answers.Add("GTA"); // Index 0
+            videogameQuestion.answers.Add("Call of Duty");    // Index 1
+            videogameQuestion.answers.Add("Minecraft"); // Index 2
+            questions.Add(videogameQuestion);
 
-            foreach (string answer in foodQuestion.answers)
-            {
-                Console.WriteLine(answer);
-            }
+            // PEBKAC -- User Error
 
-
-
-            Question question = new Question();
-            question.question = "What is your favorite food?";
-            question.answers.Add("Chicken"); // Index 0
-            question.answers.Add("Fish");    // Index 1
-            questions.answers.Add("Steak"); // Index 2
-
-            Question question = new Question();
-            question.question = "What is your favorite sport besides football?";
-            question.answers.Add("Golf"); // Index 0
-            question.answers.Add("Soccer");    // Index 1
-            questions.answers.Add("Basketball"); // Index 2
-
-            Question question = new Question();
-            question.question = "What is your favorite color";
-            question.answers.Add("blue"); // Index 0
-            question.answers.Add("red");    // Index 1
-            questions.answers.Add("green"); // Index 2
-
-            Question question = new Question();
-            question.question = "What is your favorite football clete brand?";
-            question.answers.Add("Jordans"); // Index 0
-            question.answers.Add("Nike");    // Index 1
-            questions.answers.Add("Adidas"); // Index 2
-
-            Question question = new Question();
-            question.question = "What is your favorite video game";
-            question.answers.Add("GTA"); // Index 0
-            question.answers.Add("Call of Duty");    // Index 1
-            questions.answers.Add("Minecraft"); // Index 2
-
-
-            testScores = new List<int>();
+            
+            List<int> testScores = new List<int>();
             testScores.Add(0);
             testScores.Add(0);
             testScores.Add(0);
 
-            foreach (question);
+            Console.WriteLine($"Asking {questions.Count} questions.");
+            foreach (Question question in questions)
             {
-                AskQuestion();
-                result = Program.AskQuestion(question);
-                result = scores[result] + 1;
+                int result;
+                result = Program.AskQuestion(question) - 1;
+                testScores[result] = testScores[result] + 1;
             }
-
+            List<string> testResults;
             testResults = new List<string>();
             testResults.Add("Tom Brady");
             testResults.Add("Matthew Staford");
             testResults.Add("Cooper Kupp");
 
-            string result = Program.GetResult(testScores, testResults);
+            string finalResult = Program.GetResult(testScores, testResults);
+            Console.WriteLine($"{finalResult}");
 
-            return result;
 
         }
 
@@ -154,9 +163,10 @@ namespace DanielPersonalityQuiz
 
             // TODO(jcollard 2022-02-11): You should modify this code to use
             // your question and quesiton.answers. This will not work as is
-            if (question.answers == null) throw new ArguementNullException("List of answers may not be null");
-            if (question.answers == 0) throw new ArgumentException("There should be at least 1 answer in the list");
+            if (question.answers == null) throw new ArgumentNullException("List of answers may not be null");
+            if (question.answers.Count == 0) throw new ArgumentException("There should be at least 1 answer in the list");
             int index = 1;
+            Console.WriteLine($"{question.question}");
             foreach (string answers in question.answers)
             {
                 Console.WriteLine($"{index}. {answers}");
@@ -195,23 +205,23 @@ namespace DanielPersonalityQuiz
 
             do
             {
-                Console.Write("Enter a number that is between 0 and 5:");
+                Console.Write("Enter a number that is between 1 and 3:");
                 string input = Console.ReadLine();
                 bool isANumber = int.TryParse(input, out userChoice);
                 if (isANumber == false)
                 {
-                    Console.Error.WriteLine("You did not enter a number from 0 to 5");
+                    Console.Error.WriteLine("You did not enter a number from 1 to 3");
                 }
-                else if (userChoice < 0)
+                else if (userChoice <= 0)
                 {
-                    Console.WriteLine("That number is not greater than 0");
+                    Console.WriteLine("Invalid");
                 }
                 else if (userChoice > answers.Count)
                 {
-                    Console.WriteLine("That number is not less than 5");
+                    Console.WriteLine("Invalid");
                 }
 
-            } while (1 < answers.Count);
+            } while (userChoice <= 0 || userChoice > answers.Count);
             return userChoice;
         }
 
@@ -232,42 +242,44 @@ namespace DanielPersonalityQuiz
         /// <returns>It returns the corresponding string from the results list</returns>
         public static string GetResult(List<int> scores, List<string> results)
         {
-            if (result == null || scores == null) throw new Exception("must be non-null.");
+            if (results == null || scores == null) throw new Exception("must be non-null.");
             if (results.Count == 0) throw new Exception("Cannot process an empty list");
             if (scores.Count != results.Count) throw new Exception("Results and scores were not the same length");
 
-            int highestScore = score[0];
-            string highestResult = result[0];
+            int highestScore = scores[0];
+            string highestResult = results[0];
 
             int index1 = 0;
             foreach (int score in scores)
             {
                 if (score > highestScore)
                 {
-                    highestScore = score[index];
-                    highestResult = results[index];
+                    highestScore = scores[index1];
+                    highestResult = results[index1];
                 }
-                index1 = index + 1;
+                index1 = index1 + 1;
             }
 
             return highestResult;
         }
-        class Question
-        {
-            // Feedback(jcollard 2022-01-28): I modified this class by making the
-            // fields public and changing the parameter names to lower case. There
-            // was an error stating that the variable name Question had to be
-            // different than the class name Question.
-            //
-            // Note: Marking the field as public allows it to be used in your
-            // Program class.
-            public string question;
-
-            // Feedback(jcollard 2022-01-28): This constructs a new list so we
-            // can add answers to it.
-            public List<string> answers = new List<string>();
-
-        }
     }
+
+    public class Question
+    {
+        // Feedback(jcollard 2022-01-28): I modified this class by making the
+        // fields public and changing the parameter names to lower case. There
+        // was an error stating that the variable name Question had to be
+        // different than the class name Question.
+        //
+        // Note: Marking the field as public allows it to be used in your
+        // Program class.
+        public string question;
+
+        // Feedback(jcollard 2022-01-28): This constructs a new list so we
+        // can add answers to it.
+        public List<string> answers = new List<string>();
+
+    }
+
 }
 
