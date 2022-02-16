@@ -176,19 +176,22 @@ GetResult(Hi)
 Describes what condition(s) is being tested by each call to the procedure
 
 Condition(s) tested by the first call:
+I am testing that there are at least 1 result when this is called.
  
 **TODO: Complete this section**
 
 Condition(s) tested by the second call:
+I am testing that the scores and results are integers and not null values.
 
 **TODO: Complete this section**
 
 ### 3d iii.
 
-Result of the first call:
+Result of the first call:  An error message is presented that says "Cannot process an empty list"
+
 
 **TODO: Complete this section**
 
-Result of the second call:
+Result of the second call: An error message is presented that says "must be non-null."
 
 **TODO: Complete this section**
